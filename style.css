@@ -55,9 +55,10 @@ nav.navbar-transparent{
 /* -- Imagem de capa -- */
 .capa{
     display: table; /* Centralizando elementos verticalmente */
-    padding-top: 15%;
-    width: 100%;
+    width: 100%;    /* Centralizando elementos verticalmente */
+    height: 100%;   /* Centralizando elementos verticalmente */
 }
+
 .texto-capa{
     text-align: center;
     color: #fff;
@@ -90,9 +91,20 @@ nav.navbar-transparent{
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     padding: 10px 35px;
-    margin: 0px 15px;
+    margin: 30px 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
+}
+
+/* -- Seção serviços -- */
+#servicos{
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 10px 0 10px 0;
 }
 
 /* ========================== Tipografia ========================== */
@@ -100,4 +112,20 @@ h1 {
     font-size: 100px;
     font-weight: 900;
     letter-spacing: -2px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2, #servicos h3{
+    color: #7c25f8;
 }
