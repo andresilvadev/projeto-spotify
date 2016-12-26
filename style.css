@@ -4,6 +4,19 @@
  */
 
 /* ============================ Layout ============================ */
+/* -- Formataão do body -- */
+html, body, capa{
+    height: 100%; /* Centralizando elementos horizontalmente */
+}
+
+body{
+    background: url("imagens/capa.png"),
+                url("imagens/ruido.png"),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* -- Barra de navegação -- */
 .img-logo{
     height: 40px;
@@ -38,4 +51,53 @@ nav.navbar-transparent{
 .navbar-inverse .navbar-nav > li > a:hover{
     color: #9bf0e1;
 }
+
+/* -- Imagem de capa -- */
+.capa{
+    display: table; /* Centralizando elementos verticalmente */
+    padding-top: 15%;
+    width: 100%;
+}
+.texto-capa{
+    text-align: center;
+    color: #fff;
+    display: table-cell; /* Comportamento de celulas de tabela*/
+    vertical-align: middle;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background-color: #6207e3;
+    color: #fff;
+}
+
+.btn-branco{
+    border:2px solid #fff;
+}
+
+.btn-branco:hover{
+    background-color:#fff;
+    color: #000;
+}
+
+/* -- Botões -- */
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
 /* ========================== Tipografia ========================== */
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
